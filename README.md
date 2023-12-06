@@ -4,11 +4,11 @@ Aspiring Cybersecurity Enthusiast
 
 I am an aspiring cybersecurity professional who is eager to learn and make a contribution to the field. This script is a result of my learning journey, which was inspired by my participation in the TCM: Practical Ethical Hacking - The Complete Course.
 
-Project Vision
+#Project Vision
 
 The vision for this tool is to streamline the CVE search process for cybersecurity professionals. The tool enables users to search for a specific CVE via the CLI and provides essential details, including CVE description and severity. By doing so,CVEFetcher aims to reduce the effort required for manual CVE searches through web browsers.
 
-Future Enhancement include:
+#Future Enhancement include:
 1. Affected systems
 2. Proof-of-Concept (PoC).
 3. Caching mechanism to optimize performance and API usage
@@ -36,11 +36,14 @@ Streamlined Exploit Information Retrieval: Access exploit descriptions and sever
 Centralized CVE Exploit Details: Gather critical exploit information directly from the Vulners API, ensuring a reliable and up-to-date knowledge base.
 Enhanced Vulnerability Assessment Workflow: Simplify vulnerability assessment tasks by having immediate access to CVE details.
 
-Disclaimer
+#Installation
+##Clone the repository:
+   
+   git clone https://github.com/callgh0st/CVEFetcher.git
+   cd CVEFetcher
+   python3 cvefetcher.py
 
-As an aspiring cybersecurity professional, I am continuously learning and refining my skills. This tool represents my current understanding of the field and is intended for educational purposes.
-
-Contributions
+#Contributions
 
 I welcome feedback and contributions from the cybersecurity community to help enhance this tool. Please feel free to reach out with suggestions or collaboration opportunities.
 
