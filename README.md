@@ -46,8 +46,8 @@ Install Vulners API Client: Install the Vulners API client library for Python us
     pip install vulners
 
 Create Configuration File : Create a configuration file named vulns_config.txt and add the following line:
-    [VULNERABILITIES]
-    VULN_API_KEY = YOUR_API_KEY
+[VULNERABILITIES]
+VULN_API_KEY = YOUR_API_KEY
 
 Replace YOUR_API_KEY with your actual Vulners API key. 
 
