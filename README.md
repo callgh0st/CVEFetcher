@@ -20,12 +20,11 @@
 * **Improved User Experience:** Save your API key for future use and avoid repeated input.
 
 **Setup:**
-
-1. **Create a Vulners Account:** Sign up for a free plan on Vulners at [https://vulners.com/](https://vulners.com/).
-2. **Generate API Key:** Generate an API key from your Vulners profile within the API Keys section.
-3. **Configure API Key File:** Create a file named `vulners_api_key.txt` in a universally readable location like `/etc/`.
-4. **Save API Key (Optional):** Run the script and choose "y" when prompted to save your API key to the file. Otherwise, enter the key directly.
-5. **Install Vulners API Client:** Install the Python library for accessing Vulners API using `pip install vulners`.
+1. **Install Vulners API Client:** Install the Python library for accessing Vulners API using `pip install vulners`.
+2. **Create a Vulners Account:** Sign up for a free plan on Vulners at [https://vulners.com/](https://vulners.com/).
+3. **Generate API Key:** Generate an API key from your Vulners profile within the API Keys section.
+4. **Auto-Configured API Key File:** Created a file named `vulners_api_key.txt` in a universally readable location `/etc/`.
+5. **Save API Key (Optional):** Run the script and choose "y" when prompted to save your API key to the file. Otherwise, enter the key directly.
 
 **Installation:**
 
