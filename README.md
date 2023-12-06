@@ -15,7 +15,7 @@ The tool's capabilities will continue to evolve, with future enhancements planne
     Filtering and Sorting: Implement filtering and sorting options for refined exploit search results.
     Graphical User Interface: Develop a graphical user interface for enhanced user experience.
 
-Tool Functionality
+# Tool Functionality
 
 CVEFetcher offers the following functionalities:
 
@@ -24,7 +24,7 @@ CVEFetcher offers the following functionalities:
         Description: A comprehensive explanation of the CVE.
         Severity: A standardized assessment of the exploit's risk level, aiding in prioritizing mitigation efforts.
 
-Target Users
+# Target Users
 
 CVEFetcher is primarily designed for cybersecurity professionals who require quick access to essential exploit details for vulnerability assessment and mitigation purposes.
 Benefits
@@ -35,23 +35,37 @@ Using CVEFetcher offers several benefits, including:
     Centralized CVE Exploit Details: Gather critical exploit information directly from the Vulners API, ensuring a reliable and up-to-date knowledge base.
     Enhanced Vulnerability Assessment Workflow: Simplify vulnerability assessment tasks by having immediate access to CVE details.
 
-Installation
+# Setup
+
+Create a Vulners Account: Create an account on Vulners at https://vulners.com/ and sign up for a free plan.
+
+Generate API Key: Navigate to your Vulners profile and generate an API key from the API Keys section.
+
+Install Vulners API Client: Install the Vulners API client library for Python using the following command:
+
+    pip install vulners
+
+Create Configuration File : Create a configuration file named vulns_config.txt and add the following line:
+    [VULNERABILITIES]
+    VULN_API_KEY = YOUR_API_KEY
+
+Replace YOUR_API_KEY with your actual Vulners API key. 
 
 Clone the Repository
 
     git clone https://github.com/callgh0st/CVEFetcher.git
 
-Change Directory:
-
+Change Directory
+    
     cd CVEFetcher
 
-Execute the Script:
+Execute the Script
 
     python3 cvefetcher.py
 
-Enter CVE Identifier:
-When prompted, enter the CVE identifier in the format CVE-XXXX-XXXX.
+Enter CVE Identifier
 
+When prompted, enter the CVE identifier in the format CVE-XXXX-XXXX.
 Contributions
 
 I welcome feedback and contributions from the cybersecurity community to help enhance this tool. Please feel free to reach out with suggestions or collaboration opportunities.
