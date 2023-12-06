@@ -15,7 +15,7 @@ The tool's capabilities will continue to evolve, with future enhancements planne
     Filtering and Sorting: Implement filtering and sorting options for refined exploit search results.
     Graphical User Interface: Develop a graphical user interface for enhanced user experience.
 
-# Tool Functionality
+Tool Functionality
 
 CVEFetcher offers the following functionalities:
 
@@ -24,7 +24,7 @@ CVEFetcher offers the following functionalities:
         Description: A comprehensive explanation of the CVE.
         Severity: A standardized assessment of the exploit's risk level, aiding in prioritizing mitigation efforts.
 
-# Target Users
+Target Users
 
 CVEFetcher is primarily designed for cybersecurity professionals who require quick access to essential exploit details for vulnerability assessment and mitigation purposes.
 Benefits
@@ -35,29 +35,23 @@ Using CVEFetcher offers several benefits, including:
     Centralized CVE Exploit Details: Gather critical exploit information directly from the Vulners API, ensuring a reliable and up-to-date knowledge base.
     Enhanced Vulnerability Assessment Workflow: Simplify vulnerability assessment tasks by having immediate access to CVE details.
 
-# Installation
+Installation
 
-    Clone the Repository:
+Clone the Repository
 
+    git clone https://github.com/callgh0st/CVEFetcher.git
 
-
-git clone https://github.com/callgh0st/CVEFetcher.git
-
-
-
-    Change Directory:
-
-
+Change Directory:
 
     cd CVEFetcher
 
+Execute the Script:
 
     python3 cvefetcher.py
-    
 
-    Enter CVE Identifier:
-
+Enter CVE Identifier:
 When prompted, enter the CVE identifier in the format CVE-XXXX-XXXX.
+
 Contributions
 
 I welcome feedback and contributions from the cybersecurity community to help enhance this tool. Please feel free to reach out with suggestions or collaboration opportunities.
