@@ -8,7 +8,8 @@ I am an aspiring cybersecurity professional who is eager to learn and make a con
 
 The vision for this tool is to streamline the CVE search process for cybersecurity professionals. The tool enables users to search for a specific CVE via the CLI and provides essential details, including CVE description and severity. By doing so,CVEFetcher aims to reduce the effort required for manual CVE searches through web browsers.
 
-#Future Enhancement include:
+Future Enhancement include:
+
 1. Affected systems
 2. Proof-of-Concept (PoC).
 3. Caching mechanism to optimize performance and API usage
@@ -37,11 +38,16 @@ Centralized CVE Exploit Details: Gather critical exploit information directly fr
 Enhanced Vulnerability Assessment Workflow: Simplify vulnerability assessment tasks by having immediate access to CVE details.
 
 #Installation
-##Clone the repository:
+Clone the repository:
    
    git clone https://github.com/callgh0st/CVEFetcher.git
+
    cd CVEFetcher
+   
    python3 cvefetcher.py
+
+Enter the CVE identifier in the format CVE-XXXX-XXXX
+
 
 #Contributions
 
