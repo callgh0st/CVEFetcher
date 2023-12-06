@@ -1,73 +1,41 @@
-# CVEFetcher: Streamlined CVE Search for Cybersecurity Professionals Aspiring Cybersecurity Enthusiast
+## CVEFetcher: Streamlined CVE Search with Secure API Key Management
 
-As an aspiring cybersecurity professional, I'm passionate about learning and contributing to the field. This tool, CVEFetcher, is a product of my learning journey, inspired by my participation in the TCM: Practical Ethical Hacking - The Complete Course.
-Project Vision
+**CVEFetcher** simplifies CVE searches for cybersecurity professionals by leveraging the Vulners API. This script provides streamlined access to exploit descriptions and severity ratings, eliminating the need for manual online searches.
 
-CVEFetcher aims to simplify and streamline the CVE search process for cybersecurity professionals. By leveraging the Vulners API, this tool enables users to conveniently search for specific CVEs via the CLI and retrieve essential details, including CVE descriptions and severity ratings. By doing so, CVEFetcher reduces the time and effort required for manual CVE searches through web browsers.
-Future Enhancements
+**New Features:**
 
-The tool's capabilities will continue to evolve, with future enhancements planned for:
+* **Secure API Key Management:** CVEFetcher now reads the Vulners API key from a universally readable file, enhancing security and avoiding the need for repeated input.
+* **User-driven API Key Management:** Users can choose to save their API key to the file for future use, saving time and effort.
 
-    Affected Systems: Provide information about systems affected by the CVE.
-    Proof-of-Concept (PoC): Integrate links to relevant PoCs for further analysis.
-    Caching Mechanism: Optimize performance and API usage by implementing a caching mechanism.
-    Vulnerability Database Integration: Expand exploit coverage by integrating with vulnerability databases.
-    Filtering and Sorting: Implement filtering and sorting options for refined exploit search results.
-    Graphical User Interface: Develop a graphical user interface for enhanced user experience.
+**Functionality:**
 
-# Tool Functionality
+* **CVE Search:** Search for exploits associated with specified CVEs.
+* **Detailed Exploit Information Retrieval:** Access essential details like descriptions and severity ratings for identified exploits.
 
-CVEFetcher offers the following functionalities:
+**Benefits:**
 
-    CVE Search: Search for exploits associated with specified CVEs.
-    Detailed Exploit Information Retrieval: Retrieve and display detailed exploit information, including:
-        Description: A comprehensive explanation of the CVE.
-        Severity: A standardized assessment of the exploit's risk level, aiding in prioritizing mitigation efforts.
+* **Streamlined Exploit Information Access:** Quickly retrieve critical exploit information without tedious manual searches.
+* **Enhanced Vulnerability Assessment:** Simplify vulnerability assessments with immediate access to CVE details.
+* **Secure API Key Handling:** Store your API key securely in a universally accessible location.
+* **Improved User Experience:** Save your API key for future use and avoid repeated input.
 
-# Target Users
+**Setup:**
 
-CVEFetcher is primarily designed for cybersecurity professionals who require quick access to essential exploit details for vulnerability assessment and mitigation purposes.
-Benefits
+1. **Create a Vulners Account:** Sign up for a free plan on Vulners at [https://vulners.com/](https://vulners.com/).
+2. **Generate API Key:** Generate an API key from your Vulners profile within the API Keys section.
+3. **Configure API Key File:** Create a file named `vulners_api_key.txt` in a universally readable location like `/etc/`.
+4. **Save API Key (Optional):** Run the script and choose "y" when prompted to save your API key to the file. Otherwise, enter the key directly.
+5. **Install Vulners API Client:** Install the Python library for accessing Vulners API using `pip install vulners`.
 
-Using CVEFetcher offers several benefits, including:
+**Installation:**
 
-    Streamlined Exploit Information Retrieval: Access exploit descriptions and severity ratings quickly without the inconvenience of manual online searches.
-    Centralized CVE Exploit Details: Gather critical exploit information directly from the Vulners API, ensuring a reliable and up-to-date knowledge base.
-    Enhanced Vulnerability Assessment Workflow: Simplify vulnerability assessment tasks by having immediate access to CVE details.
+1. Clone the repository: `git clone https://github.com/callgh0st/CVEFetcher.git`.
+2. Navigate to the directory: `cd CVEFetcher`.
+3. Run the script: `python3 cvefetcher.py`.
+4. Enter CVE identifier: When prompted, enter the CVE identifier in the format CVE-XXXX-XXXX.
 
-# Setup
+**Contributions:**
 
-Create a Vulners Account: Create an account on Vulners at https://vulners.com/ and sign up for a free plan.
+We welcome feedback and contributions from the cybersecurity community to improve CVEFetcher. Feel free to reach out with suggestions or collaboration opportunities.
 
-Generate API Key: Navigate to your Vulners profile and generate an API key from the API Keys section.
-
-Install Vulners API Client: Install the Vulners API client library for Python using the following command:
-
-    pip install vulners
-
-Create Configuration File : Create a configuration file named vulns_config.txt and add the following line:
-        [VULNERABILITIES]
-        VULN_API_KEY = YOUR_API_KEY
-
-Replace YOUR_API_KEY with your actual Vulners API key. 
-
-Clone the Repository
-
-    git clone https://github.com/callgh0st/CVEFetcher.git
-
-Change Directory
-    
-    cd CVEFetcher
-
-Execute the Script
-
-    python3 cvefetcher.py
-
-Enter CVE Identifier
-
-When prompted, enter the CVE identifier in the format CVE-XXXX-XXXX.
-Contributions
-
-I welcome feedback and contributions from the cybersecurity community to help enhance this tool. Please feel free to reach out with suggestions or collaboration opportunities.
-
-Thank you for your interest in this project!
+**Thank you for using CVEFetcher!**
