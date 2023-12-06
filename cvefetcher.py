@@ -1,30 +1,35 @@
-import configparser
+import os
 import vulners
 
-# Read API key from configuration file
-config = configparser.ConfigParser()
-config_file = "/home/gh0st/Documents/vulns_config.txt"
+# Define API key file path
+API_KEY_FILE = "/etc/vulners_api_key.txt"
 
 try:
-    config.read(config_file)
-    api_key = config["VULNERABILITIES"]["VULN_API_KEY"]
-except (KeyError, FileNotFoundError):
-    print(f"Error reading API key from {config_file}. Please make sure the file exists and the key is stored correctly.")
+    # Check if API key file exists
+    if not os.path.exists(API_KEY_FILE):
+        save_key = input("Save Vulners API Key (Y/N)? ").lower()
+        if save_key == "y":
+            api_key = input("Enter Vulners API Key: ")
+            with open(API_KEY_FILE, "w") as f:
+                f.write(api_key)
+        else:
+            api_key = input("Enter Vulners API Key: ")
+    else:
+        # Read API key from file
+        with open(API_KEY_FILE, "r") as f:
+            api_key = f.read().strip()
+
+    # Connect to Vulners API
+    vulners_api = vulners.VulnersApi(api_key=api_key)
+
+except Exception as e:
+    print(f"Error: {e}")
     exit(1)
 
-# Connect to Vulners API
-vulners_api = vulners.VulnersApi(api_key=api_key)
 
-# Prompt the user to enter the CVE
-cve = input("Enter the CVE you want to search for: ")
-
-# Search for exploits
-exploits = vulners_api.find_exploit_all(cve)
-
-# Check if exploits found
-if exploits:
+def display_exploit_information(exploits, cve):
+    # Check if exploit matches searched CVE
     for exploit in exploits:
-        # Check if exploit matches searched CVE
         if cve not in exploit.get("cvelist", []):
             continue
 
@@ -61,5 +66,20 @@ if exploits:
 
         # Break out of the loop after printing information for the specified CVE
         break
-else:
-    print(f"No exploits found for CVE: {cve}")
+    else:
+        print(f"No exploits found for CVE: {cve}")
+
+
+def main():
+    # Get CVE identifier from user
+    cve = input("Enter the CVE identifier you want to search for: ")
+
+    # Search for exploits
+    exploits = vulners_api.find_exploit_all(cve)
+
+    # Display exploit information
+    display_exploit_information(exploits, cve)
+
+
+if __name__ == "__main__":
+    main()
