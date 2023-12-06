@@ -39,27 +39,21 @@ Using CVEFetcher offers several benefits, including:
 
     Clone the Repository:
 
-Bash
+
 
 git clone https://github.com/callgh0st/CVEFetcher.git
 
-Use code with caution. Learn more
+
 
     Change Directory:
 
-Bash
 
-cd CVEFetcher
 
-Use code with caution. Learn more
+    cd CVEFetcher
 
-    Execute the Script:
 
-Bash
-
-python3 cvefetcher.py
-
-Use code with caution. Learn more
+    python3 cvefetcher.py
+    
 
     Enter CVE Identifier:
 
