@@ -1,4 +1,4 @@
-## CVEFetcher: Streamlined CVE Search with Secure API Key Management
+## CVEFetcher
 
 **CVEFetcher** simplifies CVE searches for cybersecurity professionals by leveraging the Vulners API. This script provides streamlined access to exploit descriptions and severity ratings, eliminating the need for manual online searches.
 
